@@ -1,0 +1,294 @@
+@font-face {
+    font-family: Choppin;
+    src: url(../fonts/ChopinScript.otf);
+
+}
+body{
+
+	background-color: #000;
+}
+p{
+
+	color: #fff;
+}
+#contact{
+	clear:left;
+}
+footer{
+	color: #f09461;
+	background-color: #5b0504;
+	clear:left;
+
+}
+#Slideshow{
+	padding-top: 90px;
+}
+#collection,#about,#contact{
+	padding-top: 70px;
+	clear:left;
+}
+#about{
+	display: block;
+	clear: left;
+}
+h2, figcaption,h1{
+	font-family: Choppin;
+	color: #f09461;
+	font-size: 300%;
+	text-align: center;
+}
+.alogo{
+	height:	50px;
+}
+.heightfull{
+	height:100vh;
+}
+.full{
+	width:100%;
+    webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+
+aside{
+	width:48%;
+	float: left;
+	padding-right: 2%;
+	padding-left: 2%;
+	display: inline-block;
+}
+figure img{
+	border-radius: 50%;
+}
+.ImageGallery>div>a{
+	margin-right: 2%;
+	margin-top: 4%;
+	width:22%;
+	height:400px;
+	display: inline-block;
+	float: left;
+	transition: all 0.2s ease-in;
+
+}
+
+.ImageGallery>div>a>img{
+	transition: all 0.2s ease-in;
+	width: 100%;
+	height:auto;
+	max-height: 399px;
+	opacity: 0.5;
+	z-index: 100;
+	
+}
+#i10,#i15,#i16,#i38{
+	width:80%;
+}
+#i37,#i39,#i58{
+	width:60%;
+}
+
+.ImageGallery a img:hover{
+	transform: scale(1.2);
+	opacity: 1;
+}
+#page-wrap {
+	width: 100%;
+	background: #000;
+	padding: 20px 20px 20px 20px;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+	clear: both;
+}
+
+#page-wrap>div {
+	width: 46%;
+	margin-top: 25px;
+	margin-right: 25px;
+	display: inline-block;
+}
+#contact-area{
+	float:left;
+}
+iframe{
+	padding-top: 50px;
+	width: 100%;
+}
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 80%;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+	background-color: #fff;
+	color: #f09461;
+}
+
+label {
+	color: #f09461;
+	float: left;
+	text-align: left;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+@keyframes fadein {
+    from{ opacity: 0; }
+    to{	opacity: 1;}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+	font-family: Choppin;
+    display: inline-block;
+    color: #f09461;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 200%;
+    
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+.thumbnail {
+	background-color: #000;
+	border:none;
+}
+#myTopnav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  border-bottom: solid #5b0504 2px; 
+}
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+@media screen and (max-width:801px){
+	#page-wrap>div {
+	width: 100%;
+	margin-top: 25px;
+	margin-right: 25px;
+	display: block;
+	}
+
+    .ImageGallery>div>a{
+        width:22%;
+        height:333px;
+    }
+    .ImageGallery>div>a>img{
+        max-height: 332px;
+        opacity: 1;
+    }
+}
+@media screen and (max-width:641px) {
+	.ImageGallery>div>a{
+    width:31%;
+    height:266px;
+    }
+    .ImageGallery>div>a>img{
+        max-height: 265px;
+    }
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  aside{
+  	width: 100%;
+ 	display: block;
+  }
+}
+@media screen and (max-width:481px) {
+.ImageGallery>div>a{
+	width:42%;
+
+}
+
+}
+
+@media screen and (max-width: 1561px) {
+	#mediumslider {
+		display: none;
+		}	
+}
+@media screen and (min-width: 1560px) {
+	#smallslider {
+		display: none;
+		}	
+	div.navBulletsWrapper  {
+	top:570px; left:1200px;
+}
